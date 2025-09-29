@@ -30,7 +30,7 @@
 
 $function @numberOne @numberTwo => {
 
-  $declare = numberOne /+ numberTwo;
+  /t \t $declare = numberOne /+ numberTwo;
   
   <declare;
   
