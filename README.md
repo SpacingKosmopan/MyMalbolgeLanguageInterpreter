@@ -3,7 +3,7 @@
  hKs_dG5[m_BA{?-Y;;Vb'rR5431M}/.zHGwEDCBA@98\6543W10/.R,+O<
 
 # My interpreted
-'<' - return
+** '<' - return **
 
 '>' - send
 
@@ -13,10 +13,25 @@
 
 '&' - wrap (finish this object)
 
+'/' - use
+7+/2 = 9
+
+'+' - combine
+7+2 = 72
+
+'++' - combine common
+"kot"++"ola" = "koto"
+
+'-' - difference
+"kot"-"ola" = ktla
+
+'--' - common
+"kot"--"ola" = "o"
+
 $function @numberOne @numberTwo => {
-  $declare = numberOne + numberTwo;
+  $declare = numberOne /+ numberTwo;
   <declare;
 }
 
 ### Short
-$f@a@b=><(a+b);&
+$f@a@b=><(a/+b);&
