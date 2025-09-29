@@ -3,7 +3,7 @@
  hKs_dG5[m_BA{?-Y;;Vb'rR5431M}/.zHGwEDCBA@98\6543W10/.R,+O<
 
 # My interpreted
-** '<' - return **
+### '<' - return 
 
 '>' - send
 
@@ -33,5 +33,5 @@ $function @numberOne @numberTwo => {
   <declare;
 }
 
-### Short
+## Short
 $f@a@b=><(a/+b);&
