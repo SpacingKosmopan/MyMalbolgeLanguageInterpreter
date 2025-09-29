@@ -5,27 +5,27 @@
 # My interpreted
 ### '<' - return 
 
-'>' - send
+### '>' - send
 
-'@' - take
+### '@' - take
 
-'$' - declare
+### '$' - declare
 
-'&' - wrap (finish this object)
+### '&' - wrap (finish this object)
 
-'/' - use
+### '/' - use
 7+/2 = 9
 
-'+' - combine
+### '+' - combine
 7+2 = 72
 
-'++' - combine common
+### '++' - combine common
 "kot"++"ola" = "koto"
 
-'-' - difference
+### '-' - difference
 "kot"-"ola" = ktla
 
-'--' - common
+### '--' - common
 "kot"--"ola" = "o"
 
 $function @numberOne @numberTwo => {
