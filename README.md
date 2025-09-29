@@ -28,10 +28,19 @@
 ### '--' - common
 "kot"--"ola" = "o"
 
-$function @numberOne @numberTwo => {
+### '#' - assign
+
+$function @numberOne @numberTwo #myFunction => {
   $declare = numberOne /+ numberTwo;
   <declare;
 }
 
 ## Short
-$f@a@b=><(a/+b);&
+$f@a@b#F=><(a/+b);&
+
+$f @a @b #F => < (a/+b); &
+
+$F>2<7;
+
+$F >2 <7;
+// zwraca 9
