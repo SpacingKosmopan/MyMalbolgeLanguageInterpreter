@@ -11,10 +11,12 @@
 
 '$' - declare
 
+'&' - wrap (finish this object)
+
 $function @numberOne @numberTwo => {
   $declare = numberOne + numberTwo;
   <declare;
 }
 
 ### Short
-$f@a@b=><(a+b);
+$f@a@b=><(a+b);&
