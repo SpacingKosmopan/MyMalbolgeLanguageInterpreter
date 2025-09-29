@@ -29,8 +29,11 @@
 "kot"--"ola" = "o"
 
 $function @numberOne @numberTwo => {
+
   $declare = numberOne /+ numberTwo;
+  
   <declare;
+  
 }
 
 ## Short
