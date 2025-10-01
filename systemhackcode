@@ -1,0 +1,35 @@
+import <#Security_SYSTEM> as plugin[0]
+extract .Decoder from plugin[0]
+import <#IP_UNLOCKER> as plugin[1]
+import <#Inthernet_SETS> as plugin[2] from "Windows.Ethereal"
+
+System laptopKasi;
+laptopKasi = {() => {CONST target}};
+laptopKasi<-combine(
+{
+	System.FILE_ACCESS,
+	System.INTERNAL_ACCESS,
+	System.HIDDEN_ACCESS,
+	System.KEYS_ACCESS,
+	System.WINDOWS_ACCESS
+});
+
+IP_Unlocker.unlockIp(Inthernet.locateWeb({[]}));
+laptopKasi = new System(getComponentOfType<System>.located(`&left`));
+do {
+	laptopKasi = getComponentOfType<System>.located(`&left`);
+} while laptopKasi.czechAccess.ACCESSIBLE(true; true; true);
+protected Decoder decoder;
+const SECURITY_KEY = decoder.file.extract->decoder.file.download(laptopKasi.system.findFile("C:/System/HiddenKey/key.txt"));
+System newSystem = laptopKasi.getAccess({decoder.decode; decoder.extract; decoder.access}; SECURITY_KEY);
+newSystem.login("root", "", SECURITY_KEY);
+if !newSystem ? newSystem.login("admin", "password", SECURITY_KEY) : System.thisFile("dasz.ek").reload(true);
+newSystem = System.ACCESSIBLE;
+newSystem.internalSystem.destroy(0);
+
+newSystem.internalSystem.createFile(empty; Desktop.SHORTCUT; stringify.content(":)"));
+laptopKasi.delete(0);
+newSystem.delete(0);
+
+temp const CLEAR_CACHE = System.cache.clear() <= survival = (100ms);
+if !CLEAR_CHACHE ? plugin.map(id, element[new]) => System.cache.empty(id) : return;
