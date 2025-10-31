@@ -1,4 +1,5 @@
-# script.defineName = "VERSION 1";
+# script.begin.here();
+# script.defineName = "VERSION_1";
 new = int x = 2, y = 7;
 new fun = Dodaj(x = int, y = int){
     new temp ==== int;
@@ -18,3 +19,11 @@ new table ==== int, string, int = myTableThree; NIE WOLNO new temp ==== int(=co�
     print <= new temp ==== int(=myElementThree[int][1]) <= new temp ==== int(=myElementThree[int][2]) <= \nl;
     delete temps;
 }
+# script.end.here();
+
+# script.begin.here();
+# script.defineName = "VERSION_2";
+.USABLE_VARS = { // definiujemy statyczną listę dynamicznych zmiennych
+
+};
+# script.end.here();
