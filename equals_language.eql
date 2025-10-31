@@ -22,8 +22,22 @@ new table ==== int, string, int = myTableThree; NIE WOLNO new temp ==== int(=co�
 # script.end.here();
 
 # script.begin.here();
-# script.defineName = "VERSION_2";
+# script.defineName = "VERSION_2-var-declaration-and-usage";
 .USABLE_VARS = { // definiujemy statyczną listę dynamicznych zmiennych
-
+    int == x 2 & y 5; // dwukrotny == tworzy nową zmienną, pojedynczy przypisuje wartość, tak jak .USABLE_VARS, które już istnieje
 };
+.CPLR => main(){ // używamy funkcji main z kompilatora (zawsze ją kompiluje na początek, domyślnie jest zainicjowana, ale nie zdefiniowana)
+    .CPLR => console.print(x); // używamy konsoli z kompilatora, a konkretnie jej funkcji print()
+        # [o] 2 // output system
+    x = 17;
+    .CPLR => console.print(x);
+        # [o] 17
+    x = 3.8f == int; // rzutujemy zmiennoprzecinkową do całej, utrata danych na poziomie zaokrąglenie w dół
+    .CPLR => console.print(x);
+        # [o] 3
+    x == int 2.2f; // przedefiniowujemy (rzutujemy ale odwrotnie) zmienna na inny typ
+    .CPLR => console.print(x);
+        # [o] 2.2
+    // x = 5; // błąd
+}
 # script.end.here();
