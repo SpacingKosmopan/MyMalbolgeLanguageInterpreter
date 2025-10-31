@@ -1,0 +1,20 @@
+# script.defineName = "VERSION 1";
+new = int x = 2, y = 7;
+new fun = Dodaj(x = int, y = int){
+    new temp ==== int;
+    temp ==== x + y;
+    ===== temp => delete.cur_temps; //(===== czyli return)
+}
+new table ===== int = myTableOne;
+new table ===== int, string = myTableTwo;
+with (myTableOne ====> elementOne; 0; 1; ){ //od zero po jedym, bez warunków
+    print <= elementOne <= \nl; } with (myTableTwo ====> elementTwo; 0; 1; ){
+    print <= elementTwo_ <= new temp ==== int(=elementTwo[int]) <= new temp ==== string(=elementTwo[string]) <= \nl; 
+    //elementTwo_ oznacza to zero u góry po lewej od jeden, tak jak for(i)) 
+    delete temps; 
+} 
+new table ==== int, string, int = myTableThree; NIE WOLNO new temp ==== int(=coś tam); 
+    with (myTableThree ====> elementThree; 0; 1; 1){ //wykona się tylko raz
+    print <= new temp ==== int(=myElementThree[int][1]) <= new temp ==== int(=myElementThree[int][2]) <= \nl;
+    delete temps;
+}
