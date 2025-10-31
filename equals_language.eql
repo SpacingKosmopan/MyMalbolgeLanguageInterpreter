@@ -44,7 +44,7 @@ new table ==== int, string, int = myTableThree; NIE WOLNO new temp ==== int(=co≈
 
 # script.begin.here();
 # script.defineName = "VERSION_3-function-declaration-and-if";
-.USABLE_FUNS {
+.USABLE_VARS {
     int == x 2 & y 5;
 }
 .USABLE_FUNS = {
